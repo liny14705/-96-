@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>楊梅區萬福街96號 — 住戶公告版</title>
+	<meta name="description" content="萬福街96號 住戶公告、公約、Wi‑Fi、聯絡方式與匯款資訊">
+	<meta name="theme-color" content="#10b981">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="zh_TW">
+	<meta property="og:site_name" content="萬福街96號 住戶公告">
+	<meta property="og:title" content="楊梅區萬福街96號 — 住戶公告版">
+	<meta property="og:description" content="生活守則｜Wi‑Fi｜聯絡方式｜繳租資訊與一鍵複製｜QR Code">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="楊梅區萬福街96號 — 住戶公告版">
+	<meta name="twitter:description" content="生活守則｜Wi‑Fi｜聯絡方式｜繳租資訊與一鍵複製｜QR Code">
+	<meta name="twitter:image" content="">
+	<style>
+		:root {
+			--bg: #f7faf9;
+			--card: #ffffff;
+			--text: #102a43;
+			--muted: #486581;
+			--primary: #10b981; /* emerald-500 */
+			--primary-600: #059669; /* emerald-600 */
+			--primary-700: #000000; /* emerald-700 */
+			--border: #e2e8f0;
+			--ok: #10b981;
+			--warn: #f59e0b;
+			--heading: #0f766e; /* teal-700 */
+			--accent-bg: #ecfdf5; /* emerald-50 */
+		}
+		* { box-sizing: border-box; }
+		html, body { height: 100%; }
+		body {
+			margin: 0;
+			font-family: 'Noto Sans TC', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+			color: var(--text);
+			background: radial-gradient(1200px 600px at 10% -10%, #ecfdf5, transparent) , var(--bg);
+			line-height: 1.7;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+		}
+		.container {
+			max-width: 1040px;
+			margin: 0 auto;
+			padding: 20px 14px 80px;
+		}
+		.header {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			gap: 8px 12px;
+			margin-bottom: 8px;
+		}
+		h1 { font-size: 22px; margin: 0; letter-spacing: 0.4px; color: var(--heading); }
+		.subtitle { color: var(--muted); font-size: 13px; }
+		.grid { display: grid; gap: 14px; }
+		@media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; gap: 16px; } }
+		.section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: 0 1px 0 rgb(16 24 40 / 4%); }
+		.section h2 { margin: 0 0 10px; font-size: 17px; color: var(--heading); display: flex; align-items: center; gap: 8px; }
+		.section h2::before { content: ""; display: inline-block; width: 6px; height: 18px; border-radius: 3px; background: linear-gradient(180deg, var(--primary), var(--primary-700)); }
+		.section h3 { margin: 16px 0 8px; font-size: 15px; color: var(--heading); }
+		ul { margin: 0; padding-left: 20px; }
+		.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; background: var(--accent-bg); color: var(--primary-700); font-size: 12px; border: 1px solid #d1fae5; }
+		.row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+		.kv { display: grid; grid-template-columns: 140px 1fr auto; gap: 8px 12px; align-items: center; }
+		.kv label { color: var(--muted); font-size: 14px; }
+		.kv .value { font-weight: 600; word-break: break-all; letter-spacing: 0.2px; }
+		.btn {
+			appearance: none;
+			border: 1px solid var(--border);
+			background: #fff;
+			color: var(--text);
+			padding: 8px 12px;
+			border-radius: 10px;
+			font-size: 14px;
+			cursor: pointer;
+			transition: transform .03s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+			box-shadow: 0 1px 0 rgb(16 24 40 / 4%);
+		}
+		.btn:hover { border-color: #cbd5e1; background: #f8fafc; }
+		.btn:active { transform: translateY(1px); }
+		.btn:focus-visible { outline: 3px solid rgba(16,185,129,.25); outline-offset: 2px; }
+		.btn.primary { background: linear-gradient(180deg, var(--primary), var(--primary-600)); color: #fff; border-color: var(--primary-600); }
+		.btn.primary:hover { background: linear-gradient(180deg, var(--primary-600), var(--primary-700)); }
+		.small { font-size: 12px; color: var(--muted); }
+		.divider { height: 1px; background: var(--border); margin: 12px 0; }
+		.footer { margin-top: 16px; color: var(--muted); font-size: 12px; text-align: center; }
+		.notice { background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412; padding: 8px 10px; border-radius: 10px; font-size: 13px; }
+		.ok { color: var(--ok); }
+		.print-hide { display: block; }
+
+		/* Mobile-first adjustments */
+		@media (max-width: 640px) {
+			.container { padding: 16px 12px 64px; }
+			h1 { font-size: 20px; }
+			.section { padding: 14px; border-radius: 12px; }
+			.section h2 { font-size: 16px; }
+			.kv { grid-template-columns: 1fr auto; }
+			.kv label { grid-column: 1 / -1; font-size: 13px; }
+			.kv .value { font-size: 15px; }
+			.btn { padding: 10px 12px; font-size: 15px; }
+			.row { gap: 6px; }
+		}
+
+		/* Large-screen typography */
+		@media (min-width: 1024px) {
+			h1 { font-size: 30px; }
+			.section h2 { font-size: 18px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>楊梅區萬福街96號 — 住戶公告版</h1>
+			<span class="subtitle">公告日期：＿＿＿（年 / 月 / 日）</span>
+		</div>
+
+		<div class="grid">
+			<section class="section">
+				<h2>生活守則 <span class="badge">請務必遵守</span></h2>
+				<ul>
+					<li>全面禁菸 — 室內、陽台、樓梯間、走道皆禁止吸菸。</li>
+					<li>禁止飼養寵物 — 本棟內請勿飼養任何寵物（犬、貓、鳥類等）。</li>
+					<li>安靜時段 — 晚間 22:00–07:00 請勿喧嘩或製造噪音。</li>
+					<li>公共區域 — 走道、樓梯間、公共陽台請勿堆放雜物或垃圾，用後恢復整潔。</li>
+					<li>安全注意 — 不得私拉電線或改裝水電；外出請關閉瓦斯與電源。</li>
+				</ul>
+				<div class="divider"></div>
+				<h3>違規處理</h3>
+				<p class="small">經勸導仍不改善者，房東得依租約處理：口頭/書面警告、終止租約、扣押金或要求賠償。造成損害者須照價賠償。</p>
+			</section>
+
+			<section class="section">
+				<h2>Wi‑Fi（住戶專用）</h2>
+				<div class="kv">
+					<label>SSID（網路名稱）</label>
+					<div class="value" id="ssidValue">【請填 SSID】</div>
+					<button class="btn" data-copy="#ssidValue">複製</button>
+
+					<label>密碼（Password）</label>
+					<div class="value" id="wifiPwdValue">【請填 Wi‑Fi 密碼】</div>
+					<button class="btn" data-copy="#wifiPwdValue">複製</button>
+				</div>
+				<p class="small">提示：可長按上方內容或按「複製」，直接貼到連線視窗。</p>
+			</section>
+
+			<section class="section">
+				<h2>房東聯絡方式（緊急 & 一般事務）</h2>
+				<div class="kv">
+					<label>房東</label>
+					<div class="value" id="landlordName">吳先生</div>
+ 
+					<label>聯絡電話</label>
+					<div class="value" id="phoneValue">0913-878-910</div>
+					<a class="btn" id="callAction" href="#" target="_blank" rel="noopener">撥打</a>
+				</div>
+				<p class="small">建議聯絡時間：09:00–21:00；若為緊急情況，請於訊息中註明。</p>
+			</section>
+
+			<section class="section">
+				<h2>繳交房租（轉帳資訊）</h2>
+				<div class="kv">
+					<label>銀行</label>
+					<div class="value" id="bankName">【請填銀行名稱或代號】</div>
+					<button class="btn" data-copy="#bankName">複製</button>
+
+					<label>分行</label>
+					<div class="value" id="branchName">【請填分行（非必填）】</div>
+					<button class="btn" data-copy="#branchName">複製</button>
+
+					<label>戶名</label>
+					<div class="value" id="accountName">【請填戶名】</div>
+					<button class="btn" data-copy="#accountName">複製</button>
+
+					<label>帳號</label>
+					<div class="value" id="accountNumber">【請填帳號】</div>
+					<button class="btn primary" data-copy="#accountNumber">一鍵複製帳號</button>
+				</div>
+				<p class="small">完成轉帳後可截圖或提供末五碼方便對帳，謝謝。</p>
+			</section>
+
+			<section class="section">
+				<h2>設備維修與報修原則</h2>
+				<ol>
+					<li>房東提供之電器（冷氣、熱水器、冰箱、洗衣機等）如屬自然故障，請立即通知房東協助維修。</li>
+					<li>人為損壞（誤用、摔壞、進水、未依正常操作）之維修與更換費用由房客自理。</li>
+					<li>燈泡、遙控器電池等耗材為個別使用耗材，請自行更換；共用區（如樓梯照明）損壞，請通知房東統一處理。</li>
+					<li>報修請提供照片／影片並附上房號或樓層位置，房東將儘速安排檢修。</li>
+				</ol>
+			</section>
+		</div>
+
+		<section class="section" style="margin-top:16px;">
+			<h2>分享與 QR Code</h2>
+			<p class="small">將本頁網址轉成 QR Code，印貼於公共區域或傳給房客掃描。</p>
+			<div class="row print-hide">
+				<button class="btn" id="genQr">產生 QR Code</button>
+				<button class="btn" id="downloadQr" disabled>下載 QR 圖片</button>
+				<span class="small" id="qrStatus"></span>
+			</div>
+			<div id="qrWrap" style="margin-top:12px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;"></div>
+			<p class="notice print-hide" style="margin-top:12px;">
+				若尚未上傳到可公開的網址，QR Code 內容將是您目前的本機路徑或檔案連結；建議上傳到雲端空間或網站後再產生。
+			</p>
+		</section>
+
+		<p class="footer">感謝配合 — 共同維護舒適安全的居住環境！</p>
+	</div>
+
+	<script>
+		function copyText(text) {
+			if (!text) return;
+			if (navigator.clipboard && window.isSecureContext) {
+				return navigator.clipboard.writeText(text);
+			}
+			const ta = document.createElement('textarea');
+			ta.value = text;
+			ta.style.position = 'fixed';
+			ta.style.left = '-9999px';
+			document.body.appendChild(ta);
+			ta.focus();
+			ta.select();
+			try { document.execCommand('copy'); } catch (e) {}
+			document.body.removeChild(ta);
+			return Promise.resolve();
+		}
+
+		function toast(el, ok) {
+			if (!el) return;
+			el.disabled = true;
+			el.textContent = ok ? '已複製' : '失敗';
+			el.style.borderColor = ok ? 'var(--ok)' : 'crimson';
+			el.style.color = ok ? 'var(--ok)' : 'crimson';
+			setTimeout(() => {
+				el.disabled = false;
+				el.textContent = el.classList.contains('primary') ? '一鍵複製帳號' : '複製';
+				el.style.borderColor = 'var(--border)';
+				el.style.color = 'var(--text)';
+				if (el.classList.contains('primary')) { el.style.color = '#fff'; }
+			}, 1200);
+		}
+
+		document.querySelectorAll('[data-copy]').forEach(btn => {
+			btn.addEventListener('click', () => {
+				const sel = btn.getAttribute('data-copy');
+				const node = document.querySelector(sel);
+				const text = node ? node.textContent.replace(/[\u3000\uFF1A\[\]】【]/g, '').trim() : '';
+				copyText(text).then(() => toast(btn, true)).catch(() => toast(btn, false));
+			});
+		});
+
+		// 一鍵動作連結：tel 與 LINE
+		(function initActions() {
+			const phoneNode = document.getElementById('phoneValue');
+			const callBtn = document.getElementById('callAction');
+			const rawPhone = phoneNode ? phoneNode.textContent.trim() : '';
+			if (rawPhone && callBtn) {
+				const tel = rawPhone.replace(/[^+\d]/g, '');
+				callBtn.href = tel ? ('tel:' + tel) : '#';
+				callBtn.setAttribute('aria-label', '撥打 ' + rawPhone);
+			} else if (callBtn) {
+				callBtn.style.display = 'none';
+			}
+
+			const lineNode = document.getElementById('lineValue');
+			const lineBtn = document.getElementById('lineAction');
+			const lineId = lineNode ? lineNode.textContent.trim() : '';
+			if (lineId && lineBtn) {
+				let href = '';
+				if (lineId.startsWith('@')) {
+					href = 'line://ti/p/' + encodeURIComponent(lineId);
+				} else {
+					// 嘗試以個人 ID；若不支援，至少開啟 LINE 並帶入文字
+					href = 'line://ti/p/~' + encodeURIComponent(lineId);
+				}
+				lineBtn.href = href;
+				lineBtn.setAttribute('aria-label', '加入 LINE：' + lineId);
+			} else if (lineBtn) {
+				lineBtn.style.display = 'none';
+			}
+		})();
+
+		let qrcodeLibLoaded = false;
+		function loadQrLib() {
+			return new Promise((resolve, reject) => {
+				if (qrcodeLibLoaded) return resolve();
+				const s = document.createElement('script');
+				s.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+				s.onload = () => { qrcodeLibLoaded = true; resolve(); };
+				s.onerror = () => reject(new Error('QRCode library failed to load'));
+				document.head.appendChild(s);
+			});
+		}
+
+		document.getElementById('genQr').addEventListener('click', async () => {
+			const status = document.getElementById('qrStatus');
+			status.textContent = '載入中…';
+			try {
+				await loadQrLib();
+				const wrap = document.getElementById('qrWrap');
+				wrap.innerHTML = '';
+				const box = document.createElement('div');
+				box.style.padding = '12px';
+				box.style.border = '1px solid var(--border)';
+				box.style.borderRadius = '12px';
+				box.style.background = '#fff';
+				const qrDiv = document.createElement('div');
+				qrDiv.id = 'qr';
+				box.appendChild(qrDiv);
+				wrap.appendChild(box);
+				// eslint-disable-next-line no-undef
+				const qr = new QRCode(qrDiv, { text: location.href, width: 192, height: 192, correctLevel: QRCode.CorrectLevel.M });
+				status.textContent = '已產生';
+				document.getElementById('downloadQr').disabled = false;
+			} catch (e) {
+				status.textContent = '無法載入 QR 函式庫（請確認網路）';
+			}
+		});
+
+		document.getElementById('downloadQr').addEventListener('click', () => {
+			const img = document.querySelector('#qr img');
+			const canvas = document.querySelector('#qr canvas');
+			const src = img ? img.src : (canvas ? canvas.toDataURL('image/png') : '');
+			if (!src) return;
+			const a = document.createElement('a');
+			a.href = src;
+			a.download = 'w96-qr.png';
+			a.click();
+		});
+	</script>
+</body>
+</html>
